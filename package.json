@@ -1,0 +1,20 @@
+{
+  "name": "calc-keypad-engine",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run build && node --test dist/test/engine.test.js",
+    "start": "npm run build && node dist/src/server.js",
+    "demo": "npm run build && node dist/src/demo.js",
+    "cli": "node dist/src/cli.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "typescript": "^7.0.2"
+  }
+}

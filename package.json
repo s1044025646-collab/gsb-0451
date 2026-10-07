@@ -1,0 +1,20 @@
+{
+  "name": "calc-key-engine",
+  "version": "1.0.0",
+  "private": true,
+  "description": "即时计算器按键语义与重复等号回放后端（TypeScript + Node + SQLite）",
+  "type": "commonjs",
+  "main": "dist/cli.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test \"dist/test/*.test.js\"",
+    "start": "npm run build && node dist/src/server.js",
+    "demo": "npm run build && node dist/src/demo.js",
+    "cli": "npm run build && node dist/src/cli.js"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^25.0.0",
+    "typescript": "^5.5.0"
+  }
+}
